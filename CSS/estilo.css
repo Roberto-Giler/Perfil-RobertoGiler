@@ -1,0 +1,741 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+   margin-block: 0;
+   margin-inline: 0;
+
+}
+.body{
+    padding: 10px;
+}
+.header{
+    background-color: rgb(10, 2, 54);
+    display: flex;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.nav{
+    justify-content: space-between;
+    /* max-width: 992px; */
+    margin: 0 0;
+
+    text-align: center;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    width: 100%;
+
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    align-items: flex-start;
+    
+    font-size: 30px;
+    
+    line-height: 80px;
+    text-align: center;
+}
+.nav-menu{
+    padding: 0 40px;
+    /* margin-right: 40px; */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.nav-menu-iten{
+
+    font-size: 16px;
+    text-align: center;
+
+    /* margin: 0 15px; */
+    line-height: 80px;
+
+    text-transform: uppercase;
+    width: max-content;
+    
+
+}
+
+/* .nav-menu-link
+{
+    padding: 8px 12px;
+    border-radius: 5px;
+    
+} */
+.nav-menu-link:hover,
+.nav-menu-link_active 
+
+{
+    background-color:aquamarine ;
+    transition: 0.5s;
+    
+}
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+main{
+    padding: 0;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+   
+    background: #fff;
+    
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+    box-shadow:o 35px 55px rgba(0, 0, 0, 0.1) ;
+    margin-top: 0;
+}
+
+.container .left_side
+{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imaBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imaBx img
+{
+    position: abolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h1
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.profileText h1 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li 
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aqua;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.contactInfo.educacion li
+{
+ margin-bottom: 15px;   
+}
+.contactInfo.educacion h5
+{
+    color: #03a9f4;
+    font-weight: 700;
+}
+.contactInfo.educacion h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 600;
+
+}
+.contactInfo.educacion h4
+{
+    color: #fff;
+    font-weight: 300;
+
+}
+.contactInfo.lenguaje .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:#081921;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.lenguaje .porcentaje div
+{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: #03a9f4;
+}
+
+
+
+.container .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+   
+}
+
+.sobreMi
+{
+    margin-bottom: 50px;
+}
+.sobreMi:last-child
+{
+    margin-bottom: 0px;
+}
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  
+}
+p
+{
+    color:black;
+    text-align: justify;
+    font-size: 1em;
+    font-weight: 600;
+}
+.sobreMi .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.sobreMi .box .periodo
+{
+    padding-right: 5px;
+    min-width: 155px;
+    width: 155px;
+
+}
+.sobreMi .box .periodo h5
+{
+    text-transform: uppercase;
+    color: #03a9f4;
+    font-weight: 600 ;
+}
+.sobreMi .box .text h4
+{
+    text-transform: uppercase;
+    color:#03a9f4;
+    font-size: 16px;
+}
+.habilidades .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades .box h4
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.habilidades .box .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.habilidades .box .porcentaje div
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+
+}
+
+
+.habilidades ul
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.habilidades ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.habilidades ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: aquamarine;
+}
+  
+
+.Aptitudes ul
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Aptitudes ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.Aptitudes ul li .fa
+{
+    color: aqua;
+    font-size: 18px;
+    width: 20px;
+}
+
+.Intereses ul
+
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.Intereses ul li 
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.Intereses ul li .fa  
+{
+    color: aqua;
+    font-size: 18px;
+    width: 20px;
+}
+
+footer
+{
+    position: relative;
+    background-color: rgb(10, 2, 54);
+    padding: 0 10px;
+    border-radius: 3px;
+    color: #fff;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form
+{
+    
+    background-color: #fff;
+    border-radius: 3px;
+    color:#081921;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+label
+{
+    background: white;
+    padding: 2px;
+    
+  
+}
+input, textarea
+{
+    border:0;
+    outline: none;
+    color: #081921;;
+}
+input:invalid, textarea:invalid
+{
+    border-color: #03a9f4;
+}
+input:valid, textarea:valid
+{
+    border-color:green;
+}
+.datos
+{
+border: solid 1px #ccc;
+padding: 5px;
+width: 280px;
+margin-top: 5px;
+margin-bottom: 5px;
+text-transform: uppercase
+
+}
+
+.boton
+{
+  
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px  15px 15px 15px ;
+    margin-top: 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+    width: 280px;
+    background: #03a9f4;
+    color: #f0f0f0;
+    font-size: 1.5em;
+  
+
+}
+
+
+
+.footer {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer__title {
+    grid-column: 1/span 2;
+}
+
+.footer__container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* reglas del container del envio de l contenedor de los contatos y redes sociales*/
+#footer__container--footer__contact{
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+}
+
+#footer__container--footer__contact .footer__container__social--networks{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 5px 0;
+
+
+}
+
+
+@media (max-width: 1000px)
+{
+   
+    .container
+    {
+        /* margin: 10px; */
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Aptitudes ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Intereses ul
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    form{
+       
+    /* width: 300px; */
+    grid-template-columns: repeat(2,1fr);
+    }
+    .datos
+    {
+        width: 100px;
+
+    }
+
+    .boton
+    {
+        width: 100px; 
+    }
+
+
+
+
+    
+    body{
+        
+        padding: 10px;
+    
+    }
+
+    .header{
+        
+        height: 60px;
+        
+     
+    }
+   
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    /* .nav{
+        width: 100%;
+    } */
+
+    .nav-menu{
+      
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(5, 30, 30);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 10px 0;
+        height: calc(100%-60px);
+        left: 100%;
+        transition:left 0.3s;
+        display: grid;
+         grid-template-columns:repeat(2,1fr)
+
+        
+    }
+    
+    .nav-menu-iten{
+        
+        line-height: 30px;
+       
+    }
+   
+    .nav-menu-link:hover,
+    .nav-menu-link_active 
+    {
+       background: none;
+       color: #83c5f7;
+    }
+    .nav-toggle{
+       
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+    .sobreMi .box
+    {
+        flex-direction: column;
+    }
+    .sobreMi .box .periodo
+    {
+        margin-bottom: 5px;
+        width: auto;
+    }
+    .habilidades .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Aptitudes ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Intereses ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    form
+    {
+        /* width: 150px; */
+        grid-template-columns: repeat(1,1fr);
+    }
+    .datos::placeholder{
+        
+        font-size: 0.5em;
+        padding: 2px;
+    }
+}
+
+
+/* @media (max-width: 768px){
+
+    body{
+        
+        padding: 10px;
+    }
+    .header{
+        
+        height: 60px;
+        
+     
+    }
+   
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+
+    .nav-menu{
+      
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgb(5, 30, 30);
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 10px 0;
+        height: calc(100%-60px);
+        left: 100%;
+        transition:left 0.3s;
+        display: grid;
+         grid-template-columns:repeat(2,1fr)
+
+        
+    }
+
+    .nav-menu-iten{
+        
+        line-height: 30px;
+       
+    }
+   
+    .nav-menu-link:hover,
+    .nav-menu-link_active 
+    {
+       background: none;
+       color: #83c5f7;
+    }
+    .nav-toggle{
+       
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+    .sobreMi .box
+    {
+        flex-direction: column;
+    }
+    .sobreMi .box .periodo
+    {
+        margin-bottom: 5px;
+    }
+    .habilidades .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Aptitudes ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Intereses ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    form
+    {
+        width: 150px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .datos::placeholder{
+        
+        font-size: 0.5em;
+        padding: 2px;
+    }
+}  */
