@@ -1,4 +1,3 @@
-window.addEventListener('onload', function (event){
     
     const navToggle= document.querySelector(".nav-toggle")
     const navMenu= document.querySelector(".nav-menu")
@@ -21,4 +20,3 @@ window.addEventListener('onload', function (event){
             alert('¡Tu mensaje fue enviado, Gracias por escribirme, a la brevedad me comunicare!');
     })
         
-} )
